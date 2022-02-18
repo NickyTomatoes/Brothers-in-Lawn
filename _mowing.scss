@@ -1,0 +1,26 @@
+.mow {
+  animation-name: mow;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  transition: all 2s;
+}
+
+// Mow Keyframe
+
+@keyframes mow {
+  0% {
+    transform: translateX(-22vw);
+  }
+
+  50% {
+    transform: translateX(100vw);
+  }
+
+  51% {
+    transform: translateX(101vw) translateY(-9vh) rotateY(180deg);
+  }
+
+  100% {
+    transform: translateX(-22vw) translateY(-9vh) rotateY(180deg);
+  }
+}

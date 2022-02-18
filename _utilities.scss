@@ -1,0 +1,111 @@
+$primary-color: #81d125;
+$secondary-color: #fa6920;
+$bg-img: url(/img/showcase-2.jpg);
+$bg-light: #e6e6e6;
+$bg-dark: #848484;
+
+.primary-text {
+  color: $primary-color;
+}
+
+.secondary-text {
+  color: $secondary-color;
+}
+
+.current {
+  text-decoration: underline;
+  text-decoration-color: $secondary-color;
+
+  &:hover {
+    text-decoration-color: $primary-color;
+  }
+}
+
+.lead {
+  font-size: larger;
+  padding: 2rem;
+  color: $bg-dark;
+}
+
+// Backgrounds
+
+// Header Inner
+#header-inner {
+  .container {
+    background: #333;
+
+    #inner-nav {
+      display: flex;
+      justify-content: space-between;
+      padding: 1.3rem;
+
+      ul {
+        display: flex;
+        text-align: center;
+        padding-right: 1rem;
+
+        li {
+          padding: 0.3rem;
+          font-size: 1.3rem;
+
+          a {
+            color: #fff;
+            padding: 0.3rem;
+            border-radius: 5px;
+
+            &:hover {
+              color: $secondary-color;
+              background: rgba(163, 163, 163, 0.3);
+            }
+          }
+        }
+      }
+
+      img {
+        height: 30px;
+        width: 250px;
+        padding-left: 1rem;
+      }
+    }
+  }
+}
+
+// Footer Inner
+#footer {
+  .container {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.3rem;
+    background: #aeaeae;
+
+    img {
+      height: 30px;
+      width: 250px;
+      padding: 0.5rem 1rem;
+    }
+
+    h3 {
+      font-family: "Dancing Script", cursive;
+      font-size: 1.3rem;
+      padding: 1rem 8rem 0 0;
+      color: #333;
+    }
+
+    .social {
+      display: flex;
+      justify-content: space-between;
+      width: 75px;
+      margin-right: 1rem;
+      padding: 0 0.8rem;
+
+      i {
+        color: #333;
+        padding-right: 1rem;
+
+        &:hover {
+          color: $secondary-color;
+        }
+      }
+    }
+  }
+}

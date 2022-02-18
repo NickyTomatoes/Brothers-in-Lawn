@@ -1,0 +1,360 @@
+@import "utilities";
+@import "mowing";
+@import "mobile";
+
+// Reset
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Raleway", sans-serif;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+// Navbar
+#header-home {
+  overflow: hidden;
+
+  .container {
+    color: #fff;
+
+    #main-nav {
+      display: flex;
+      justify-content: space-between;
+      height: 25vh;
+
+      img {
+        height: 100%;
+        width: 375px;
+        padding: 1rem;
+      }
+
+      ul {
+        display: flex;
+        justify-content: center;
+        padding: 1rem;
+        text-shadow: 1px 1px #333;
+
+        li {
+          padding: 1rem 2rem;
+          font-size: 1.5rem;
+        }
+
+        a {
+          color: #fff;
+          padding: 0.2rem;
+
+          &:hover {
+            color: $secondary-color;
+            background: rgba(163, 163, 163, 0.3);
+            border-radius: 5px;
+          }
+        }
+      }
+    }
+
+    .header-content {
+      text-align: center;
+      height: 100%;
+      margin-top: 6rem;
+      font-size: 2rem;
+    }
+
+    .mower {
+      padding-top: 5rem;
+      align-items: center;
+
+      img {
+        height: 225px;
+        padding-top: 4.1rem;
+      }
+    }
+  }
+}
+
+// Showcase Landing for Header Home
+#header-home {
+  background: $bg-img no-repeat center center/cover;
+  height: 100vh;
+}
+
+// Services Page
+#services {
+  text-align: center;
+  padding: 2rem;
+  background: $bg-light;
+  color: $bg-light;
+
+  h2 {
+    padding: 2rem;
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 2rem;
+  }
+
+  p {
+    font-weight: bold;
+    font-size: 1.4rem;
+    padding: 1rem;
+    color: #2d2d2d;
+  }
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+
+    .service {
+      background: $bg-dark;
+      margin: 1rem;
+      border: 1px solid $secondary-color;
+      border-radius: 15px;
+
+      i {
+        padding: 1.2rem 0;
+      }
+
+      h4 {
+        font-size: x-large;
+        padding: 1rem;
+        text-decoration: underline;
+        text-decoration-color: $primary-color;
+      }
+
+      p {
+        font-size: 1.2rem;
+        padding: 1rem 2rem 3rem 2rem;
+      }
+    }
+  }
+
+  // 2nd Services Section
+  &-2 {
+    text-align: center;
+    background: $bg-dark;
+    color: $bg-dark;
+
+    h2 {
+      font-size: 1.7rem;
+    }
+
+    p {
+      color: #2d2d2d;
+      font-weight: bold;
+      font-size: large;
+      padding: 1rem;
+    }
+
+    .container {
+      display: flex;
+      justify-content: space-between;
+      padding: 4rem 2rem;
+
+      .service {
+        background: $bg-light;
+        color: $bg-dark;
+        margin: 1rem;
+        border: 2px solid $primary-color;
+        border-radius: 15px;
+
+        i {
+          padding: 1.2rem 0;
+        }
+
+        h4 {
+          font-size: x-large;
+          text-decoration: underline;
+          text-decoration-color: $secondary-color;
+        }
+
+        p {
+          font-size: 1.2rem;
+          padding: 1rem 2rem 3rem 2rem;
+        }
+      }
+    }
+  }
+
+  // 3rd Service Section
+  &-3 {
+    text-align: center;
+    padding: 2rem;
+    background: $bg-light;
+    color: #333;
+
+    h2 {
+      font-size: 1.7rem;
+    }
+
+    p {
+      color: #2d2d2d;
+      font-weight: bold;
+      font-size: large;
+      padding: 1rem;
+    }
+
+    .container {
+      display: flex;
+      justify-content: space-evenly;
+      padding: 1rem;
+
+      .service {
+        background: #aeaeae;
+        color: $bg-light;
+        margin: 1rem;
+        border: 2px solid $secondary-color;
+        border-radius: 15px;
+
+        i {
+          padding: 1.2rem 0;
+        }
+
+        h4 {
+          font-size: x-large;
+          text-decoration: underline;
+          text-decoration-color: $primary-color;
+        }
+
+        p {
+          font-size: 1.2rem;
+          padding: 1rem 2rem 3rem 2rem;
+        }
+      }
+    }
+  }
+}
+
+// Work Page
+#work {
+  text-align: center;
+  padding: 2rem;
+  background: $bg-light;
+  color: #2d2d2d;
+
+  h2 {
+    padding-top: 1rem;
+    font-size: 2rem;
+    color: #333;
+  }
+
+  p {
+    font-weight: bold;
+    font-size: 1.4rem;
+    padding: 1rem;
+    color: #2d2d2d;
+  }
+
+  .bush-container {
+    display: flex;
+    justify-content: space-evenly;
+
+    h4 {
+      color: $bg-dark;
+      font-size: larger;
+      padding-bottom: 1rem;
+      text-decoration: underline;
+      text-decoration-color: $secondary-color;
+    }
+
+    img {
+      height: 100%;
+      width: 100%;
+      max-height: 275px;
+      max-width: 475px;
+      border: 1px solid $primary-color;
+      border-radius: 10px;
+      margin-bottom: 3rem;
+    }
+
+    i {
+      padding-top: 7rem;
+    }
+  }
+}
+
+// Contact Form and Img
+#contact {
+  text-align: center;
+  align-items: center;
+  padding: 2rem;
+  background: $bg-light;
+  color: #2d2d2d;
+
+  h2 {
+    padding-top: 1rem;
+    font-size: 2rem;
+    color: #333;
+  }
+
+  p {
+    font-weight: bold;
+    font-size: 1.4rem;
+    padding: 1rem;
+    color: #2d2d2d;
+  }
+
+  .second-p {
+    font-size: large;
+  }
+
+  .container {
+    display: flex;
+    margin-top: 1.5rem;
+    justify-content: space-evenly;
+    align-items: center;
+
+    form {
+      .text-field {
+        input {
+          width: 96%;
+          height: 2rem;
+          margin: 1rem 0;
+          border: 1px solid $primary-color;
+          border-radius: 5px;
+        }
+
+        input::placeholder {
+          color: #333;
+          padding-left: 0.5rem;
+          font-weight: bold;
+        }
+
+        textarea {
+          width: 96%;
+          height: 6rem;
+          margin: 1rem 0;
+          border: none;
+          border: 1px solid $primary-color;
+          border-radius: 5px;
+        }
+
+        textarea::placeholder {
+          color: #333;
+          padding: 0.5rem;
+          font-weight: bold;
+        }
+      }
+
+      button[type="submit"] {
+        width: 60%;
+        height: 32px;
+        font-weight: bold;
+        color: black;
+        background-color: $primary-color;
+        border: 1px solid $secondary-color;
+        border-radius: 5px;
+      }
+    }
+
+    div {
+      padding: 1rem;
+
+      img {
+        height: 400px;
+        width: 600px;
+        border: 1px solid $secondary-color;
+        border-radius: 10px;
+      }
+    }
+  }
+}
