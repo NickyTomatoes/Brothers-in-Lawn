@@ -25,6 +25,7 @@
 
 #header-inner .container {
   background: #333;
+  border-bottom: 1px solid #81d125;
 }
 
 #header-inner .container #inner-nav {
@@ -174,6 +175,7 @@
   #header-home .container #main-nav ul {
     background: #333;
     width: 100%;
+    border-bottom: 1px solid #81d125;
   }
   #work .bush-container {
     -webkit-box-orient: vertical;
