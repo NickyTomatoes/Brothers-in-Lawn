@@ -196,8 +196,13 @@
 }
 
 @media (max-width: 600px) {
+  #header-home .container #main-nav ul li a {
+    font-size: large;
+    padding: 0;
+  }
   #header-home .container .header-content h1 {
-    margin-top: 12rem;
+    margin-top: 6rem;
+    font-size: larger;
   }
   #header-home .container .mower {
     display: none;
@@ -308,7 +313,6 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  height: 25vh;
 }
 
 #header-home .container #main-nav img {
@@ -329,7 +333,7 @@
 }
 
 #header-home .container #main-nav ul li {
-  padding: 1rem 2rem;
+  padding: 0.5rem 1rem;
   font-size: 1.5rem;
 }
 
