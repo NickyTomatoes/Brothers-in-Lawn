@@ -184,7 +184,9 @@
 
 #header-home {
   background: url(/img/lawn1.jpg) no-repeat center center/cover;
+  background-color: #333;
   height: 100vh;
+  width: 100%;
   position: relative;
   overflow: hidden;
 }
